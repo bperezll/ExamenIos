@@ -8,11 +8,25 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var yearLabel: UILabel!
+    @IBOutlet weak var lenghtLabel: UILabel!
+    @IBOutlet weak var directorLabel: UILabel!
+    @IBOutlet weak var generoLabel: UILabel!
+    @IBOutlet weak var countryLabel: UILabel!
+    @IBOutlet weak var posterImageView: UIImageView!
+    @IBOutlet weak var sinopsisLabel: UILabel!
+    
+    var movie: Movie? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        //titleLabel.text = movie?.title
+        /* yearLabel.text = movie!.year
+        posterImageView.image = UIImage(named: "image-placeholder")*/
+        //posterImageView.loadFrom(url: movie.image)
     }
     
 

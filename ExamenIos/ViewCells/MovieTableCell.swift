@@ -10,11 +10,14 @@ import UIKit
 class MovieTableCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var yearLabel: UILabel!
+    @IBOutlet weak var posterImageView: UIImageView!
     
     func render(movie: Movie) {
         titleLabel.text = movie.title
-        //imageView.image = UIImage(named: "image-placeholder")
-        //imageView.loadFrom(url: superhero.image.url)
+        yearLabel.text = movie.year
+        posterImageView.image = UIImage(named: "image-placeholder")
+        posterImageView.loadFrom(url: movie.image)
     }
 
 }
